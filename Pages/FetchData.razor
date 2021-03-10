@@ -40,8 +40,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        people = await Http.GetJsonAsync<PeopleResult>("https://swapi.co/api/people");
-        
+        people = await Http.GetJsonAsync<PeopleResult>("https://swapi.dev/api/people");        
     }
 
     class StarWarsPerson
