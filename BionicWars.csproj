@@ -15,8 +15,8 @@
   </ItemGroup>
 
 
-    <Target Name="CompileSCSS" BeforeTargets="Build" Condition="Exists('App.scss')">
+    <!--<Target Name="CompileSCSS" BeforeTargets="Build" Condition="Exists('App.scss')">
         <Message Importance="high" Text="Compiling SCSS" />
-        <Exec Command="sass --update ./App.scss:./wwwroot/css/App.css" />
-    </Target>
+        <Exec Command="sass update ./App.scss:./wwwroot/css/App.css" />
+    </Target>-->
 </Project>
